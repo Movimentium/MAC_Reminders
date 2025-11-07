@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		0CCEBCFD2EBE3D950025C4C0 /* MAC_RemindersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCEBCFC2EBE3D950025C4C0 /* MAC_RemindersApp.swift */; };
-		0CCEBCFF2EBE3D950025C4C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCEBCFE2EBE3D950025C4C0 /* ContentView.swift */; };
 		0CCEBD012EBE3D970025C4C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CCEBD002EBE3D970025C4C0 /* Assets.xcassets */; };
 		0CCEBD042EBE3D970025C4C0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CCEBD032EBE3D970025C4C0 /* Preview Assets.xcassets */; };
 		0CCEBD0C2EBE3DEF0025C4C0 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0CCEBD0B2EBE3DEF0025C4C0 /* README.md */; };
+		0CCEBD0F2EBE3E830025C4C0 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCEBD0E2EBE3E830025C4C0 /* HomeScreen.swift */; };
+		0CCEBD122EBE40250025C4C0 /* SideBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCEBD112EBE40250025C4C0 /* SideBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0CCEBCF92EBE3D950025C4C0 /* MAC_Reminders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MAC_Reminders.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CCEBCFC2EBE3D950025C4C0 /* MAC_RemindersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAC_RemindersApp.swift; sourceTree = "<group>"; };
-		0CCEBCFE2EBE3D950025C4C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0CCEBD002EBE3D970025C4C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0CCEBD032EBE3D970025C4C0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0CCEBD052EBE3D970025C4C0 /* MAC_Reminders.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MAC_Reminders.entitlements; sourceTree = "<group>"; };
 		0CCEBD0B2EBE3DEF0025C4C0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		0CCEBD0E2EBE3E830025C4C0 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		0CCEBD112EBE40250025C4C0 /* SideBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +58,8 @@
 			children = (
 				0CCEBD0B2EBE3DEF0025C4C0 /* README.md */,
 				0CCEBCFC2EBE3D950025C4C0 /* MAC_RemindersApp.swift */,
-				0CCEBCFE2EBE3D950025C4C0 /* ContentView.swift */,
+				0CCEBD102EBE40160025C4C0 /* Views */,
+				0CCEBD0D2EBE3E740025C4C0 /* Screens */,
 				0CCEBD002EBE3D970025C4C0 /* Assets.xcassets */,
 				0CCEBD052EBE3D970025C4C0 /* MAC_Reminders.entitlements */,
 				0CCEBD022EBE3D970025C4C0 /* Preview Content */,
@@ -70,6 +73,22 @@
 				0CCEBD032EBE3D970025C4C0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0CCEBD0D2EBE3E740025C4C0 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				0CCEBD0E2EBE3E830025C4C0 /* HomeScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		0CCEBD102EBE40160025C4C0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0CCEBD112EBE40250025C4C0 /* SideBarView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,8 +162,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CCEBCFF2EBE3D950025C4C0 /* ContentView.swift in Sources */,
+				0CCEBD122EBE40250025C4C0 /* SideBarView.swift in Sources */,
 				0CCEBCFD2EBE3D950025C4C0 /* MAC_RemindersApp.swift in Sources */,
+				0CCEBD0F2EBE3E830025C4C0 /* HomeScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

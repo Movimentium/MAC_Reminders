@@ -7,7 +7,7 @@ import SwiftUI
 struct MAC_RemindersApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeScreen()
         }
     }
 }
