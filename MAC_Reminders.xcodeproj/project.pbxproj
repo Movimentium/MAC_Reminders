@@ -17,6 +17,8 @@
 		0CCEBD122EBE40250025C4C0 /* SideBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCEBD112EBE40250025C4C0 /* SideBarView.swift */; };
 		0CCF09ED2EBEC0020036A0EC /* CDList+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCF09EB2EBEC0020036A0EC /* CDList+CoreDataClass.swift */; };
 		0CCF09EE2EBEC0020036A0EC /* CDList+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCF09EC2EBEC0020036A0EC /* CDList+CoreDataProperties.swift */; };
+		0CCF09F52EBEC5510036A0EC /* CDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCF09F42EBEC5510036A0EC /* CDManager.swift */; };
+		0CCF09F72EBEC62B0036A0EC /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCF09F62EBEC62B0036A0EC /* BaseModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		0CCEBD112EBE40250025C4C0 /* SideBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarView.swift; sourceTree = "<group>"; };
 		0CCF09EB2EBEC0020036A0EC /* CDList+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDList+CoreDataClass.swift"; sourceTree = "<group>"; };
 		0CCF09EC2EBEC0020036A0EC /* CDList+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDList+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0CCF09F42EBEC5510036A0EC /* CDManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDManager.swift; sourceTree = "<group>"; };
+		0CCF09F62EBEC62B0036A0EC /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,8 +73,8 @@
 				0CCEBD0D2EBE3E740025C4C0 /* Screens */,
 				0CCEBD102EBE40160025C4C0 /* Views */,
 				0C82F4152EBEBB98000CA545 /* SDProvider.swift */,
-				0CCF09EA2EBEBFE70036A0EC /* Model */,
-				0CCF09EF2EBEC0CC0036A0EC /* Extensions */,
+				0CCF09EA2EBEBFE70036A0EC /* Models */,
+				0CCF09EF2EBEC0CC0036A0EC /* Managers */,
 				0CCEBD002EBE3D970025C4C0 /* Assets.xcassets */,
 				0CCEBD052EBE3D970025C4C0 /* MAC_Reminders.entitlements */,
 				0CCEBD022EBE3D970025C4C0 /* Preview Content */,
@@ -102,21 +106,23 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		0CCF09EA2EBEBFE70036A0EC /* Model */ = {
+		0CCF09EA2EBEBFE70036A0EC /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				0CCF09EB2EBEC0020036A0EC /* CDList+CoreDataClass.swift */,
 				0CCF09EC2EBEC0020036A0EC /* CDList+CoreDataProperties.swift */,
 				0C82F4172EBEBD1C000CA545 /* CDModel.xcdatamodeld */,
+				0CCF09F62EBEC62B0036A0EC /* BaseModel.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
-		0CCF09EF2EBEC0CC0036A0EC /* Extensions */ = {
+		0CCF09EF2EBEC0CC0036A0EC /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				0CCF09F42EBEC5510036A0EC /* CDManager.swift */,
 			);
-			path = Extensions;
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,10 +196,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CCF09F72EBEC62B0036A0EC /* BaseModel.swift in Sources */,
 				0CCEBD122EBE40250025C4C0 /* SideBarView.swift in Sources */,
 				0CCEBCFD2EBE3D950025C4C0 /* MAC_RemindersApp.swift in Sources */,
 				0CCF09EE2EBEC0020036A0EC /* CDList+CoreDataProperties.swift in Sources */,
 				0C82F4192EBEBD1C000CA545 /* CDModel.xcdatamodeld in Sources */,
+				0CCF09F52EBEC5510036A0EC /* CDManager.swift in Sources */,
 				0CCEBD0F2EBE3E830025C4C0 /* HomeScreen.swift in Sources */,
 				0CCF09ED2EBEC0020036A0EC /* CDList+CoreDataClass.swift in Sources */,
 				0C82F4162EBEBB98000CA545 /* SDProvider.swift in Sources */,
