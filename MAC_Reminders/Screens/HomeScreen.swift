@@ -5,12 +5,21 @@ import SwiftUI
 
 struct HomeScreen: View {
     var body: some View {
+//        NavigationSplitView {
+//            
+//            Text("Sidebar")
+//        } detail: {
+//            Text("MyListItems")
+//        }
+        
         NavigationSplitView {
-            
-            Text("Sidebar")
+            SideBarView()
+        } content: {
+            Text("Content")
         } detail: {
-            Text("MyListItems")
+            Text("Detail")
         }
+
     }
 }
 
